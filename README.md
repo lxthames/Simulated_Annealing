@@ -3,7 +3,7 @@
 
 This repository implements a Population-Based Simulated Annealing (SA) algorithm to solve binary optimization problems, specifically the Min One problem. The goal is to minimize the number of `1`s in a binary vector.
 
-## Problem Description
+ Problem Description
 
 The Min One problem is defined as:
 
@@ -13,7 +13,7 @@ The Min One problem is defined as:
 
 where \( x_i \in \{0, 1\} \). The goal is to find a binary vector \( x \) that minimizes the number of `1`s.
 
-## Algorithm Steps
+ Algorithm Steps
 
 1. Generate Initial Population: Create a population of random binary vectors.
 2. Evaluate Population: Calculate the objective value for each solution.
@@ -26,14 +26,14 @@ where \( x_i \in \{0, 1\} \). The goal is to find a binary vector \( x \) that m
    - Reduce the temperature.
 6. Visualize Results: Plot the convergence of the best objective value, temperature reduction, and population diversity.
 
-## Code Structure
+ Code Structure
 
 - Objective Function: Computes the number of `1`s in a binary vector.
 - Neighbor Generation: Flips one random bit in a binary vector to generate a neighbor.
 - Population-Based SA: Implements the population-based SA algorithm.
 - Visualizations: Uses `matplotlib` to plot the convergence and diversity of the population.
 
-## Usage
+ Usage
 
 1. Clone the repository:
    ```bash
@@ -54,9 +54,9 @@ where \( x_i \in \{0, 1\} \). The goal is to find a binary vector \( x \) that m
 4. View the results:
    - The script will display plots showing the convergence of the best objective value, temperature reduction, and population diversity.
 
-## Example Output
+ Example Output
 
-### Plots
+# Plots
 
 1. Best Objective Value vs. Iterations:
    - Shows how the best objective value improves over iterations.
@@ -67,7 +67,7 @@ where \( x_i \in \{0, 1\} \). The goal is to find a binary vector \( x \) that m
 3. Population Diversity (Boxplot):
    - Shows the distribution of objective values in the population over iterations.
 
-### Console Output
+# Console Output
 
 ```
 Initial Population:
@@ -93,7 +93,7 @@ Iteration 1:
 Final Best Solution: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], Final Best Value: 0
 ```
 
-## Parameters
+ Parameters
 
 - `pop_size`: Size of the population.
 - `n`: Dimension of the binary vector.
@@ -102,22 +102,22 @@ Final Best Solution: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], Final Best Value: 0
 - `cooling_rate`: Rate at which the temperature decreases.
 - `iterations`: Number of iterations.
 
-## License
+ License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Contributing
+ Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.
 
-## Contact
+ Contact
 
 For questions or feedback, please contact [Your Name](mailto:your-email@example.com).
 ```
 
 ---
 
-### Key Files
+# Key Files
 
 1. `population_based_sa.py`:
    - The main script implementing the Population-Based SA algorithm and visualizations.
@@ -130,7 +130,7 @@ For questions or feedback, please contact [Your Name](mailto:your-email@example.
 
 ---
 
-### How to Use
+# How to Use
 
 1. Clone the repository.
 2. Install dependencies (`matplotlib`).
