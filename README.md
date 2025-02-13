@@ -1,13 +1,11 @@
-### **README File**
-
 ```markdown
 # Population-Based Simulated Annealing for Binary Optimization
 
-This repository implements a **Population-Based Simulated Annealing (SA)** algorithm to solve binary optimization problems, specifically the **Min One** problem. The goal is to minimize the number of `1`s in a binary vector.
+This repository implements a Population-Based Simulated Annealing (SA) algorithm to solve binary optimization problems, specifically the Min One problem. The goal is to minimize the number of `1`s in a binary vector.
 
 ## Problem Description
 
-The **Min One** problem is defined as:
+The Min One problem is defined as:
 
 \[
 \min z = f(x) = \sum_{i=1}^n x_i
@@ -17,23 +15,23 @@ where \( x_i \in \{0, 1\} \). The goal is to find a binary vector \( x \) that m
 
 ## Algorithm Steps
 
-1. **Generate Initial Population**: Create a population of random binary vectors.
-2. **Evaluate Population**: Calculate the objective value for each solution.
-3. **Define Best Solution**: Identify the best solution in the initial population.
-4. **Set Initial Temperature**: Initialize the temperature \( T = T_0 \).
-5. **Repeat for Iterations**:
+1. Generate Initial Population: Create a population of random binary vectors.
+2. Evaluate Population: Calculate the objective value for each solution.
+3. Define Best Solution: Identify the best solution in the initial population.
+4. Set Initial Temperature: Initialize the temperature \( T = T_0 \).
+5. Repeat for Iterations:
    - Generate neighbors for each population member.
    - Sort all neighbors and select the best solutions to form the new population.
    - Update the best solution ever found.
    - Reduce the temperature.
-6. **Visualize Results**: Plot the convergence of the best objective value, temperature reduction, and population diversity.
+6. Visualize Results: Plot the convergence of the best objective value, temperature reduction, and population diversity.
 
 ## Code Structure
 
-- **Objective Function**: Computes the number of `1`s in a binary vector.
-- **Neighbor Generation**: Flips one random bit in a binary vector to generate a neighbor.
-- **Population-Based SA**: Implements the population-based SA algorithm.
-- **Visualizations**: Uses `matplotlib` to plot the convergence and diversity of the population.
+- Objective Function: Computes the number of `1`s in a binary vector.
+- Neighbor Generation: Flips one random bit in a binary vector to generate a neighbor.
+- Population-Based SA: Implements the population-based SA algorithm.
+- Visualizations: Uses `matplotlib` to plot the convergence and diversity of the population.
 
 ## Usage
 
@@ -60,13 +58,13 @@ where \( x_i \in \{0, 1\} \). The goal is to find a binary vector \( x \) that m
 
 ### Plots
 
-1. **Best Objective Value vs. Iterations**:
+1. Best Objective Value vs. Iterations:
    - Shows how the best objective value improves over iterations.
 
-2. **Temperature vs. Iterations**:
+2. Temperature vs. Iterations:
    - Shows how the temperature decreases over iterations.
 
-3. **Population Diversity (Boxplot)**:
+3. Population Diversity (Boxplot):
    - Shows the distribution of objective values in the population over iterations.
 
 ### Console Output
@@ -119,20 +117,20 @@ For questions or feedback, please contact [Your Name](mailto:your-email@example.
 
 ---
 
-### **Key Files**
+### Key Files
 
-1. **`population_based_sa.py`**:
+1. `population_based_sa.py`:
    - The main script implementing the Population-Based SA algorithm and visualizations.
 
-2. **`README.md`**:
+2. `README.md`:
    - The documentation file explaining the project, usage, and example output.
 
-3. **`LICENSE`**:
+3. `LICENSE`:
    - The license file (e.g., MIT License).
 
 ---
 
-### **How to Use**
+### How to Use
 
 1. Clone the repository.
 2. Install dependencies (`matplotlib`).
